@@ -1,0 +1,760 @@
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// Variables
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+$c-header: rgb(42, 43, 59);
+$c-web: rgb(144, 108, 180);
+$c-it: rgb(79, 124, 221);
+$c-tele: rgb(206, 56, 56);
+$c-soft: rgb(108, 127, 167);
+$c-mark: rgb(59, 192, 103);
+$c-cyber: rgb(236, 3, 73);
+$c-about: rgb(49, 53, 65);
+$c-border: rgb(197, 194, 194);
+$c-news: rgb(94, 94, 94);
+$c-social: rgb(31, 34, 46);
+$font-white: rgb(241, 241, 241);
+$c-pop: rgb(69, 74, 88);
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// Mixins
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+@mixin serv-circle {
+    font-size: 1.4rem;
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1.9rem;
+}
+
+@mixin button {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: $font-white;
+    width: 8.8rem;
+    margin: 0 auto;
+    padding: .7rem 0;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+}
+
+@mixin button-arrow {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $font-white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.1rem 0;
+    text-transform: uppercase;
+}
+
+@mixin box {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 93%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: .8rem;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(231, 231, 231);
+    margin: 0 auto;
+    font-family: 'poppins', sans-serif;
+}
+
+.radius {
+    border-radius: 3px;
+    background-color: #ddd;
+}
+
+a {
+    color: #000;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// HEADER
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+header {
+    background-color: $font-white;
+    color: white;
+    height: 5.6rem;
+    width: 100%;
+} 
+
+// Width to 99vw maybe
+
+.container {
+    display: grid;
+}
+
+.header-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: .9rem;
+}
+
+.head-right {
+    display: flex;
+    margin-right: .5rem;
+}
+
+.head-logo {
+    max-width: 65%;
+    margin-left: .5rem;
+    // margin-right: 15px;
+}
+
+.phone {
+    font-size: 1.7rem;
+    transform: scaleX(-1);
+    margin: .7rem .7rem 0 .5rem;
+    color: $c-header; 
+}
+
+.phone:hover {
+    color: darken($c-header, 8%);
+    border-bottom: 1px solid #000;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    margin-bottom: .4rem;
+}
+
+.fig {
+    color: $font-white;
+    background-color: $c-header;
+    font-size: .7rem;
+    padding: .4rem .8rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fig:hover {
+    background-color: darken(rgb(42, 43, 59), 8%);
+}
+
+
+.fig img:first-of-type {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 auto;
+}
+
+.fig figcaption {
+    margin-top: -4px;
+    
+}
+
+.menu p {
+    margin: 0;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// Top Image
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.top-image {
+    position: absolute;
+    background-color: cyan;
+    color: $font-white;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    background: url(img/working-cover.jpg) no-repeat center;
+    background-size: cover;
+    box-shadow: inset 250px 0 300px #000;
+}
+
+.image-header {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.image-header h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-top: 25vh;
+}
+
+.image-header p {
+    line-height: 2.3rem;
+    font-size: 1.4rem;
+}
+
+.image-header .radius {
+    background-color: $c-web;
+    @include button-arrow;
+    width: 16rem;
+}
+
+.image-header .radius:hover {
+    background-color: darken($c-web, 7%)
+}
+
+.image-header .radius img {
+    width: 1rem;
+    margin-left: .7rem;
+}
+
+// Moves everything down below image
+.seperator {
+    height: 94vh;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// Services
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.services {
+    @include box;
+    // width: 92.9vw;
+    // margin-left: 1.75vw;
+}
+
+.services .radius h2{
+    font-weight: 400;
+    margin-bottom: .8rem;
+}
+
+.services .radius p{
+    margin: 0 auto;
+    margin-top: .5rem;
+    width: 85%;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    line-height: 1.4rem;
+}
+
+.serv-brd {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: $font-white;
+    border: 1px solid $c-border;
+}
+
+.serv-icon {
+    color: $font-white;
+    margin-top: 1.15rem;
+}
+
+.line {
+    width: 1.8rem;
+    height: .2rem;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.serv-web:hover {
+    background-color: $c-web;
+    color: $font-white;
+
+    .serv-circle-web,
+    .read,
+    .fa-code,
+    .line {
+        background-color: $font-white;
+        color: $c-web;
+    }
+    
+}
+
+.serv-circle-web {
+    @include serv-circle;
+    background-color: $c-web;
+}
+
+.serv-web h3 {
+    @include button;
+    background-color: $c-web;
+}
+
+.serv-it:hover {
+    background-color: $c-it;
+    color: $font-white;
+
+    .serv-circle-it,
+    .read,
+    .fa-desktop,
+    .line {
+        background-color: $font-white;
+        color: $c-it;
+    }
+    
+}
+
+.serv-circle-it {
+    @include serv-circle;
+    background-color: $c-it;
+}
+
+.serv-it h3{
+    @include button;
+    background-color: $c-it;
+}
+
+.serv-tele:hover {
+    background-color: $c-tele;
+    color: $font-white;
+
+    .serv-circle-tele,
+    .read,
+    .fa-phone,
+    .line {
+        background-color: $font-white;
+        color: $c-tele;
+    }
+    
+}
+
+.serv-circle-tele {
+    @include serv-circle;
+    background-color: $c-tele;
+}
+.serv-tele h3{
+    @include button;
+    background-color: $c-tele;
+}
+
+.serv-soft:hover {
+    background-color: $c-soft;
+    color: $font-white;
+
+    .serv-circle-soft,
+    .read,
+    .fa-th,
+    .line {
+        background-color: $font-white;
+        color: $c-soft;
+    }
+    
+}
+
+.serv-circle-soft {
+    @include serv-circle;
+    background-color: $c-soft;
+}
+.serv-soft h3{
+    @include button;
+    background-color: $c-soft;
+}
+
+.serv-mark:hover {
+    background-color: $c-mark;
+    color: $font-white;
+
+    .serv-circle-mark,
+    .read,
+    .fa-chart-bar,
+    .line {
+        background-color: $font-white;
+        color: $c-mark;
+    }
+    
+}
+
+.serv-circle-mark {
+    @include serv-circle;
+    background-color: $c-mark;
+}
+.serv-mark h3{
+    @include button;
+    background-color: $c-mark;
+}
+
+.serv-cyber:hover {
+    background-color: $c-cyber;
+    color: $font-white;
+
+    .serv-circle-cyber,
+    .read,
+    .fa-shield-alt,
+    .line {
+        background-color: $font-white;
+        color: $c-cyber;
+    }
+    
+}
+
+.serv-circle-cyber {
+    @include serv-circle;
+    background-color: $c-cyber;
+}
+.serv-cyber h3{
+    @include button;
+    background-color: $c-cyber;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// ABOUT
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.about {
+    background-color: $c-about;
+    color: white;
+    text-align: left;
+    // width: 96.3vw;
+}
+
+.about-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+    padding-top: 1rem;
+    line-height: 1.7rem;
+    font-size: 1.03rem;
+    padding-bottom: 3rem;
+}
+
+.about h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+
+.about p:first-of-type {
+    font-weight: 600;
+}
+
+.about p {
+    padding-bottom: .5rem;
+}
+
+.about p:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.about h3 {
+    @include button-arrow;
+    display: inline;
+    text-align: center;
+    background-color: $font-white;
+    color: $c-about;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-left: 0rem;
+}
+
+.about-wrapper h3:hover {
+    background-color: darken($font-white, 8%);
+}
+
+.about i {
+    color: $c-about;
+    width: 1rem;
+    margin-left: .7rem;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// NEWS
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// article {
+//     width: 96.3vw;
+//     margin-left: -.1rem;
+// }
+
+.news-head {
+    background-color: $font-white;
+    color: $c-about;
+    margin: 0 auto;
+    padding: 1.2rem 0rem;
+    text-transform: uppercase;
+    font-size: .85rem;
+    height: 6rem;
+}
+
+.news-head h2,
+.news-line {
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+}
+
+.news-line {
+    position: absolute;
+    width: 4.2rem;
+    height: .3rem;
+    background-color: $c-about;
+    margin-left: 3.5%;
+    margin-top: 1.9rem;
+}
+
+
+.news {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+}
+.news-content-wrapper {
+    @include box;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay img {
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid $c-border;
+}
+
+.overlay h4 {
+    position: absolute;
+    background-color: $c-web;
+    text-align: center;
+    text-transform: uppercase;
+    color: $font-white;
+    font-size: .84rem;
+    font-weight: 400;
+    padding: .25rem .6rem;
+}
+
+.news-content h2 a {
+    color: $c-web;
+}
+
+.news-content h2 a:hover {
+    text-decoration: underline;
+}
+
+.overlay :nth-child(2):hover {
+    .view-all,
+    .speech-point {
+        display: block;
+    }
+}
+
+.overlay a {
+    color: $font-white;
+}
+
+.overlay h4:hover {
+    text-decoration: underline;
+}
+
+.over-cont {
+    position: absolute;
+    margin-top: -52vw;
+    right: 0%; 
+}
+
+.over-cont p,
+.over-cont h4,
+.speech-point {
+    right: 0%;
+}
+
+.view-all,
+.speech-point {
+    margin-top: -2.8rem;
+    display: none;
+}
+
+.speech-point {
+    position: absolute;
+    background-color: $c-pop;
+    width: .8rem;
+    height: .8rem;
+    transform: rotate(45deg);
+    margin-top: -.25rem;
+    margin-right: 1.2rem;
+}
+
+.overlay p {
+    position: absolute;
+    background-color: $c-pop;
+    text-align: center;
+    color: $font-white;
+    font-size: .75rem;
+    font-weight: 400;
+    padding: .7rem .6rem;
+    width: 10rem;
+}
+
+.news-content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.news-content h2 {
+    color: $c-web;
+    font-size: 1.05rem;
+    margin-top: 2rem;
+}
+
+.news-content p {
+    color: $c-news;
+    font-size: .84rem;
+    line-height: 1.4rem;
+}
+
+.news-content h3 {
+    @include button;
+    background-color: $c-web;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 1.4rem;
+    width: 8.6rem;
+}
+
+.news-content h3:hover {
+    background-color: darken($c-web, 10%);
+}
+
+.news-content img {
+    @include serv-circle;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
+}
+
+.news-seperator {
+    width: 100%;
+    height: .1rem;
+    background-color: $c-border;
+}
+
+.news-footer {
+    display: flex;
+    justify-content: left;
+}
+
+.author {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.2rem 2rem;
+    padding-bottom: 2.8rem;
+}
+
+.author h2 {
+    color: $c-about;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// SPONSORS
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.sponsors-top,
+.sponsors-btm {
+    display: none;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// FOOTER
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.footer {
+    background-color: $c-about;
+    height: 55rem;
+    margin-top: 4rem;
+    line-height: 1.4rem;
+    letter-spacing: .04rem;
+    display: flex;
+    flex-direction: column;
+    color: $font-white;
+    // width: 96.3vw;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    margin: 0 auto;
+}
+
+.social i {
+    font-size: 1.6rem;
+    background-color: $c-social;
+    border-radius: 1px;
+    text-align: center;
+    padding: 1rem;
+    width: 40vw;
+}
+
+.footer h3,
+.footer p {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.footer p:nth-of-type(4) {
+    margin-bottom: 1.3rem;
+}
+
+.footer p:nth-of-type(6),
+.footer p:nth-of-type(13),
+.footer p:nth-of-type(17) {
+    margin-bottom: -.8rem;
+}
+
+.footer h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer a {
+    font-size: .8rem;
+    color: $font-white;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: .8rem;
+}
+
+
+.fa-facebook-f:hover {
+    background-color: rgb(61, 94, 201)
+}
+
+.fa-twitter:hover {
+    background-color: rgb(0, 162, 255);
+}
+
+.fa-linkedin-in:hover {
+    background-color: rgb(14, 117, 177);
+}
