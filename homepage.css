@@ -27,9 +27,7 @@ header {
   width: 100%;
 }
 
-nav,
-.sponsors-btm,
-.sponsors-top {
+.lg {
   display: none;
 }
 
@@ -67,6 +65,53 @@ nav,
 .head-logo {
   max-width: 65%;
   margin-left: 1vw;
+}
+
+.headset,
+.plane {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  width: 8.8rem;
+  margin: 0 auto;
+  padding: .7rem 0;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 4rem;
+  border-radius: 4px;
+  padding: 0rem;
+  margin: 0;
+  height: 3.7rem;
+}
+
+.headset i,
+.plane i {
+  margin-top: 1rem;
+}
+
+.headset {
+  background-color: #4f7cdd;
+}
+
+.headset:hover {
+  background-color: #3569d8;
+}
+
+.plane {
+  background-color: #949494;
+}
+
+.plane:hover {
+  background-color: #7b7b7b;
 }
 
 .phone {
@@ -919,6 +964,18 @@ nav,
   }
   .footer {
     margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 991px) {
+  .head-right a {
+    margin-left: 1.4rem;
+  }
+  .plane,
+  .headset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=homepage.css.map */

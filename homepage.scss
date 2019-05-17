@@ -14,6 +14,7 @@ $c-news: rgb(94, 94, 94);
 $c-social: rgb(31, 34, 46);
 $font-white: rgb(241, 241, 241);
 $c-pop: rgb(69, 74, 88);
+$c-contact: rgb(148, 148, 148);
 
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 // Mixins
@@ -95,9 +96,7 @@ header {
     width: 100%;
 } 
 
-nav,
-.sponsors-btm,
-.sponsors-top {
+.lg {
     display: none;
 }
 
@@ -124,6 +123,41 @@ nav,
     margin-left: 1vw;
     // margin-right: 15px;
 }
+
+.headset,
+.plane {
+    @include button;
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 4rem;
+    border-radius: 4px;
+    padding: 0rem;
+    margin: 0;
+    height: 3.7rem;
+}
+
+.headset i,
+.plane i {
+    margin-top: 1rem;
+}
+
+.headset {
+    background-color: $c-it;
+
+    &:hover {
+        background-color: darken($c-it, 6%);
+    }
+}
+
+.plane {
+    background-color: $c-contact;
+
+    &:hover {
+        background-color: darken($c-contact, 10%);
+    }
+}
+
 
 .phone {
     font-size: 1.7rem;
@@ -895,5 +929,30 @@ nav,
     .footer {
         margin-top: 2.5rem;
     }
+}
+
+@media (min-width: 991px) {
+
+    .head-right a {
+        margin-left: 1.4rem;
+    }
+
+    .plane,
+    .headset {
+        display: flex;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
