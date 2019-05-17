@@ -55,7 +55,7 @@ $c-pop: rgb(69, 74, 88);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 93%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     font-size: .8rem;
@@ -91,11 +91,15 @@ a {
 header {
     background-color: $font-white;
     color: white;
-    height: 5.6rem;
+    height: 6.8rem;
     width: 100%;
 } 
 
-// Width to 99vw maybe
+nav,
+.sponsors-btm,
+.sponsors-top {
+    display: none;
+}
 
 .container {
     display: grid;
@@ -104,7 +108,7 @@ header {
 .header-wrap {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     margin-top: .9rem;
@@ -112,12 +116,12 @@ header {
 
 .head-right {
     display: flex;
-    margin-right: .5rem;
+    margin-right: 3vw;
 }
 
 .head-logo {
     max-width: 65%;
-    margin-left: .5rem;
+    margin-left: 1vw;
     // margin-right: 15px;
 }
 
@@ -245,7 +249,7 @@ header {
     margin-top: .5rem;
     width: 85%;
     font-size: .8rem;
-    letter-spacing: .05rem;
+    letter-spacing: .02rem;
     line-height: 1.4rem;
 }
 
@@ -266,6 +270,11 @@ header {
     height: .2rem;
     background-color: #000;
     margin: 0 auto;
+}
+
+.services a > div{
+    height: 19rem;
+
 }
 
 .serv-web:hover {
@@ -385,6 +394,8 @@ header {
     background-color: $c-mark;
 }
 
+
+
 .serv-cyber:hover {
     background-color: $c-cyber;
     color: $font-white;
@@ -475,11 +486,6 @@ header {
 // NEWS
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-// article {
-//     width: 96.3vw;
-//     margin-left: -.1rem;
-// }
 
 .news-head {
     background-color: $font-white;
@@ -757,4 +763,137 @@ header {
 
 .fa-linkedin-in:hover {
     background-color: rgb(14, 117, 177);
+}
+
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// MEDIA QUERIES
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+@media (min-width: 768px) {
+
+    
+
+    @mixin box {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .sponsors-btm,
+    .sponsors-top {
+        display: initial;
+    }
+
+    .head-right .fa-phone {
+        display: none;
+    }
+
+    .services {
+        @include box;
+    }
+
+    .services a {
+        width: 49%;
+    }
+    
+    .art-3 {
+        display: none;
+    }
+    
+    .news-container {
+        display: flex;
+    }
+
+    .news {
+        width: 50%;
+    }
+
+    .news-content-wrapper {
+        height: 36rem;
+    }
+
+
+    .careers {
+        margin-top: 1.6rem;
+    }
+
+    .over-cont {
+        margin-top: -26.9vw;
+        right: 0%; 
+    }
+
+    .spons-sep {
+        margin-top: 1rem;
+        width: 100%;
+        height: 3rem;
+        background-color: $font-white;
+    }
+
+    .spons-img {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2.5rem;
+    }
+
+    .spons-img-btm {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 0;
+    }
+
+    .sponsors-top img,
+    .sponsors-btm img {
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+
+    .sponsors-top img:first-of-type {
+        width: 8rem;
+    }
+
+    .sponsors-top img:nth-of-type(2) {
+        width: 12rem;
+    }
+
+    .sponsors-top img:nth-of-type(3) {
+        width: 3rem;
+    }
+
+    .sponsors-top img:last-of-type {
+        width: 14rem;
+    }
+
+    .sponsors-btm img:first-of-type {
+        height: 5rem;
+    }
+
+    .sponsors-btm img:nth-of-type(2) {
+        height: 6.8rem;
+    }
+
+    .sponsors-btm img:nth-of-type(3) {
+        height: 6rem;
+    }
+
+    .sponsors-btm img:last-of-type {
+        height: 5rem;
+    }
+
+    .footer {
+        margin-top: 2.5rem;
+    }
+
 }
