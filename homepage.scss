@@ -62,6 +62,15 @@ $c-contact: rgb(148, 148, 148);
     font-size: .8rem;
 }
 
+@mixin nav-hover {
+    background-color: none;
+    top: 6.8rem;
+    width: 15.2vw;
+    height: 6.4rem;
+    position: absolute;
+    // border: 1px dashed green;
+}
+
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
 
@@ -204,6 +213,175 @@ header {
 
 .menu p {
     margin: 0;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+// NAV
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $c-header;
+    color: $font-white;
+    text-align: center;
+    line-height: 0rem;
+    // padding: 1.4rem 0 .4rem 0;
+    text-transform: uppercase;
+}
+
+.main-nav i {
+    font-size: 1.3rem;
+}
+
+.main-nav h4 {
+    font-size: .8rem;
+    font-weight: 300; 
+}
+
+.main-nav h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.main-nav div:first-of-type,
+.main-nav div:last-of-type {
+    width: 3.5vw;
+}
+
+.main-nav div {
+    width: 15.2vw;
+    padding-top: 1.3rem;
+    padding-bottom: .3rem;
+    border-left: 1px solid darken($c-header, 7%);
+    border-right: 1px solid lighten($c-header, 7%);
+}
+
+.nav-web .fa-code{
+    color: $c-web;
+}
+
+.nav-it .fa-desktop {
+    color: $c-it;
+}
+
+.nav-tele .fa-phone {
+    color: $c-tele;
+}
+
+.nav-soft .fa-th {
+    color: $c-soft;
+}
+
+.nav-mark .fa-chart-bar {
+    color: $c-mark;
+}
+
+.nav-cyber .fa-shield-alt {
+    color: $c-cyber;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: .8rem;
+    color: $font-white;
+    text-transform: uppercase;
+}
+
+.nav-menu a {
+    color: $font-white;
+}
+
+.nav-menu h3 {
+    font-weight: 200;
+}
+
+.nav-menu h4 {
+    font-size: .9;
+}
+
+// Non-visible boxes for nav menu
+
+.web-active {
+    @include nav-hover;
+    left: 3.6vw;
+}
+
+.it-active {
+    @include nav-hover;
+    left: 18.9vw;
+}
+
+.tele-active {
+    @include nav-hover;
+    left: 34.2vw;
+}
+
+.soft-active {
+    @include nav-hover;
+    left: 49.5vw;
+}
+
+.mark-active {
+    @include nav-hover;
+    left: 64.6vw;
+}
+
+.cyber-active {
+    @include nav-hover;
+    left: 80vw;
+}
+
+// End of non-visible boxes
+
+.web-opt {
+    background-color: darken($c-web, 10%);
+}
+
+.it-opt {
+    background-color: darken($c-it, 10%);
+}
+
+.tele-opt {
+    background-color: darken($c-tele, 10%);
+}
+
+.soft-opt {
+    background-color: darken($c-soft, 10%);
+}
+
+.mark-opt {
+    background-color: darken($c-mark, 10%);
+}
+
+.cyber-opt {
+    background-color: darken($c-cyber, 10%);
+}
+
+.web-opt,
+.it-opt,
+.tele-opt,
+.soft-opt,
+.mark-opt,
+.cyber-opt {
+    top: 13.1rem;
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    z-index: 1000;
+}
+
+.main-nav,
+.web-opt,
+.it-opt,
+.tele-opt,
+.soft-opt,
+.mark-opt,
+.cyber-opt {
+    display: none;
 }
 
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -851,11 +1029,6 @@ header {
         width: 50%;
     }
 
-    .news-content-wrapper {
-        height: 36rem;
-    }
-
-
     .careers {
         margin-top: 1.6rem;
     }
@@ -942,17 +1115,202 @@ header {
         display: flex;
     }
 
+    .main-nav {
+        display: flex;
+    }
 
+    .about {
+        background-image: url(img/branded.png);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
 
+    .news-overflow {
+        overflow: hidden;
+    }
 
+    .overlay img {
+        transition: all .2s ease-in-out;
+    }
 
+    .overlay img:hover {
+        transform: scale(1.1);
+        filter: invert(20%) brightness(130%);
+    }
 
+    // .nav-web:hover {
+    //     background-color: $c-web;
 
+    //     .fa-code{
+    //         color: $font-white;
+    //     }
 
+        
+    //     .main-nav  {
+    //         background-color: green;
+    //     }
+    // }
 
+    .web-active:hover {
+        ~ .main-nav .nav-web {
+            background-color: $c-web;
+        }
 
+        ~ .main-nav .nav-web .fa-code {
+            color: $font-white;
+        }
 
+        ~ .web-opt {
+            display: flex;
+        }
+    }
 
+    .web-opt:hover {
+        display: flex;
 
+        ~ .main-nav .nav-web {
+            background-color: $c-web;
+        }
 
+        ~ .main-nav .nav-web .fa-code {
+            color: $font-white;
+        }
+
+    }
+
+    .it-active:hover {
+        ~ .main-nav .nav-it {
+            background-color: $c-it;
+        }
+
+        ~ .main-nav .nav-it .fa-desktop {
+            color: $font-white;
+        }
+
+        ~ .it-opt {
+            display: flex;
+        }
+    }
+
+    .it-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-it {
+            background-color: $c-it;
+        }
+
+        ~ .main-nav .nav-it .fa-desktop {
+            color: $font-white;
+        }
+
+    }
+
+    .tele-active:hover {
+        ~ .main-nav .nav-tele {
+            background-color: $c-tele;
+        }
+
+        ~ .main-nav .nav-tele .fa-phone {
+            color: $font-white;
+        }
+
+        ~ .tele-opt {
+            display: flex;
+        }
+    }
+
+    .tele-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-tele {
+            background-color: $c-tele;
+        }
+
+        ~ .main-nav .nav-tele .fa-phone {
+            color: $font-white;
+        }
+
+    }
+
+    .soft-active:hover {
+        ~ .main-nav .nav-soft {
+            background-color: $c-soft;
+        }
+
+        ~ .main-nav .nav-soft .fa-th {
+            color: $font-white;
+        }
+
+        ~ .soft-opt {
+            display: flex;
+        }
+    }
+
+    .soft-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-soft {
+            background-color: $c-soft;
+        }
+
+        ~ .main-nav .nav-soft .fa-th {
+            color: $font-white;
+        }
+
+    }
+
+    .mark-active:hover {
+        ~ .main-nav .nav-mark {
+            background-color: $c-mark;
+        }
+
+        ~ .main-nav .nav-mark .fa-chart-bar {
+            color: $font-white;
+        }
+
+        ~ .mark-opt {
+            display: flex;
+        }
+    }
+
+    .mark-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-mark {
+            background-color: $c-mark;
+        }
+
+        ~ .main-nav .nav-mark .fa-chart-bar {
+            color: $font-white;
+        }
+
+    }
+
+    .cyber-active:hover {
+        ~ .main-nav .nav-cyber {
+            background-color: $c-cyber;
+        }
+
+        ~ .main-nav .nav-cyber .fa-shield-alt {
+            color: $font-white;
+        }
+
+        ~ .cyber-opt {
+            display: flex;
+        }
+    }
+
+    .cyber-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-cyber {
+            background-color: $c-cyber;
+        }
+
+        ~ .main-nav .nav-cyber .fa-shield-alt {
+            color: $font-white;
+        }
+
+    }
 }
