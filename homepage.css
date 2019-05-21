@@ -1389,6 +1389,8 @@ header {
             justify-content: space-between;
   }
   .main-nav div {
+    border-left: 1px solid #22222f;
+    border-right: 1px solid #323447;
     width: 11vw;
   }
   .main-nav div:first-of-type,
@@ -1414,7 +1416,7 @@ header {
     margin-left: -8.5vw;
   }
   .nav-menu {
-    padding: 0 14.5vw 0 17.6vw;
+    padding: 0 17vw 0 17.6vw;
   }
   .image-text,
   .image-header .radius {

@@ -1396,6 +1396,8 @@ header {
     }
 
     .main-nav div {
+        border-left: 1px solid darken($c-header, 4%);
+        border-right: 1px solid lighten($c-header, 4%);
         width: $nav;
     }
 
@@ -1429,7 +1431,7 @@ header {
     }
 
     .nav-menu {
-        padding: 0 14.5vw 0 17.6vw;
+        padding: 0 17vw 0 17.6vw;
     }
 
     .image-text,
