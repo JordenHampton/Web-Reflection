@@ -16,6 +16,8 @@ $font-white: rgb(241, 241, 241);
 $c-pop: rgb(69, 74, 88);
 $c-contact: rgb(148, 148, 148);
 
+$nav: 11vw;
+
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 // Mixins
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -735,6 +737,8 @@ header {
     @include box;
     margin-top: 3rem;
     text-align: left;
+    height: 90%;
+    display: flex;
 }
 
 .overlay {
@@ -825,6 +829,10 @@ header {
     margin: 0 auto;
 }
 
+.news-main {
+    margin-bottom: 3rem;
+}
+
 .news-content h2 {
     color: $c-web;
     font-size: 1.05rem;
@@ -857,6 +865,10 @@ header {
     height: 3rem;
     margin-left: 0rem;
     margin-right: 1rem;
+}
+
+.news-main .read {
+    margin-bottom: -4vw;
 }
 
 .news-seperator {
@@ -900,7 +912,7 @@ header {
 
 .footer {
     background-color: $c-about;
-    height: 55rem;
+    height: 57rem;
     margin-top: 4rem;
     line-height: 1.4rem;
     letter-spacing: .04rem;
@@ -916,6 +928,7 @@ header {
     grid-template-rows: 1fr;
     grid-gap: 2rem;
     margin: 0 auto;
+    margin-left: 2.5vw;
 }
 
 .social i {
@@ -935,12 +948,6 @@ header {
 
 .footer p:nth-of-type(4) {
     margin-bottom: 1.3rem;
-}
-
-.footer p:nth-of-type(6),
-.footer p:nth-of-type(13),
-.footer p:nth-of-type(17) {
-    margin-bottom: -.8rem;
 }
 
 .footer h3 {
@@ -976,7 +983,6 @@ header {
 .fa-linkedin-in:hover {
     background-color: rgb(14, 117, 177);
 }
-
 
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 //\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -1029,17 +1035,42 @@ header {
         width: 50%;
     }
 
-    .careers {
-        margin-top: 1.6rem;
-    }
-
     .over-cont {
         margin-top: -26.9vw;
         right: 0%; 
     }
 
+    .footer {
+        height: 33.6rem;
+    }
+
+    .foot-contact,
+    .foot-about,
+    .foot-legal,
+    .foot-social {
+        margin-left: 1vw;
+        width: 48%;
+    }
+
+    .foot-about {
+        margin-left: 50vw;
+        margin-top: -15.14rem;
+    }
+
+    .foot-social {
+        margin-left: 50vw;
+        margin-top: -9.6rem;
+    }
+
+    .social i {
+        margin-left: -1.2vw;
+        width: 20vw;
+    }
+
     .spons-sep {
-        margin-top: 1rem;
+        position: absolute;
+        z-index: -1000;
+        margin-top: -.4vw;
         width: 100%;
         height: 3rem;
         background-color: $font-white;
@@ -1048,7 +1079,7 @@ header {
     .spons-img {
         display: flex;
         justify-content: space-around;
-        margin-top: 2.5rem;
+        margin-top: 5rem;
     }
 
     .spons-img-btm {
@@ -1119,6 +1150,16 @@ header {
         display: flex;
     }
 
+    .image-text {
+        text-align: left;
+        width: 35rem;
+    }
+
+    .image-header .radius {
+        text-align: center;
+        margin-left: 0;
+    }
+
     .about {
         background-image: url(img/branded.png);
         background-size: cover;
@@ -1153,6 +1194,9 @@ header {
     // }
 
     .web-active:hover {
+
+        cursor: pointer;
+
         ~ .main-nav .nav-web {
             background-color: $c-web;
         }
@@ -1180,6 +1224,9 @@ header {
     }
 
     .it-active:hover {
+
+        cursor: pointer;
+
         ~ .main-nav .nav-it {
             background-color: $c-it;
         }
@@ -1207,6 +1254,9 @@ header {
     }
 
     .tele-active:hover {
+
+        cursor: pointer;
+
         ~ .main-nav .nav-tele {
             background-color: $c-tele;
         }
@@ -1234,6 +1284,9 @@ header {
     }
 
     .soft-active:hover {
+
+        cursor: pointer;
+
         ~ .main-nav .nav-soft {
             background-color: $c-soft;
         }
@@ -1261,6 +1314,9 @@ header {
     }
 
     .mark-active:hover {
+
+        cursor: pointer;
+
         ~ .main-nav .nav-mark {
             background-color: $c-mark;
         }
@@ -1288,6 +1344,9 @@ header {
     }
 
     .cyber-active:hover {
+
+        cursor: pointer;
+
         ~ .main-nav .nav-cyber {
             background-color: $c-cyber;
         }
@@ -1312,5 +1371,204 @@ header {
             color: $font-white;
         }
 
+    }
+}
+
+@media (min-width: 1300px) {
+
+
+    @mixin box {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .header-wrap {
+        width: 70.77%;
+        margin-left: 15.5vw;
+        justify-content: space-between;
+    }
+
+    .main-nav div {
+        width: $nav;
+    }
+
+    .main-nav div:first-of-type,
+    .main-nav div:last-of-type {
+        width: 16.3vw;
+    }
+
+    .active {
+        width: $nav;
+    }
+
+    .web-active {
+        margin-left: 12.9vw;
+    }
+    
+    .it-active {
+        margin-left: 8.6vw;
+    }
+
+    .tele-active {
+        margin-left: 4.3vw;
+    }
+
+    .mark-active {
+        margin-left: -4.1vw;
+    }
+
+    .cyber-active {
+        margin-left: -8.5vw;
+    }
+
+    .nav-menu {
+        padding: 0 14.5vw 0 17.6vw;
+    }
+
+    .image-text,
+    .image-header .radius {
+        margin-left: 2rem;
+    }
+
+    .image-header {
+        margin-left: 14.8vw;
+    }
+
+    .services .radius p {
+        font-size: .9rem;
+    }
+
+    .serv-web,
+    .serv-it {
+        width: 126.6%;
+    }
+
+    .serv-web {
+        margin-left: -27.6%;
+    }
+
+    .serv-it {
+        margin-left: 1%;
+    }
+
+    .serv-tele,
+    .serv-soft,
+    .serv-mark,
+    .serv-cyber {
+        width: 61%;
+    }
+
+    .serv-tele {
+        
+        margin-left: -27.6%;
+    }
+
+    .serv-soft {
+        margin-left: -66%;
+        
+    }
+
+    .serv-mark {
+        margin-left: 105.1%;
+        margin-top: -20rem;
+    }
+
+    .serv-cyber {
+        margin-left: 66.7%;
+        margin-top: -20rem;
+    }
+
+    .about-wrapper {
+        width: 50%;
+        text-align: left;
+        margin-left: 16.5vw;
+    }
+
+    .over-cont {
+        top: 27vw;
+    }
+
+    .news-head {
+        padding-left: 13.6vw;
+    }
+
+    .news-line {
+        margin-left: 3vw;
+    }
+
+    .news-container {
+        width: 89%;
+        max-width: 1310px;
+        margin: 0 auto;
+    }
+
+    .art-3 {
+        display: flex;
+    }
+
+    .footer {
+        height: 19rem;
+    }
+
+    .foot-contact,
+    .foot-about,
+    .foot-legal,
+    .foot-social {
+        margin: 0;
+        width: 25%;
+    }
+
+    .foot-contact {
+        margin-left: 16vw;
+    }
+
+    .foot-about {
+        margin-left: 34vw;
+        margin-top: -15.1rem;
+    }
+
+    .foot-legal {
+        margin-left: 48.5vw;
+        margin-top: -16.5rem;
+    }
+
+    .foot-social {
+        margin-left: 67.2vw;
+        margin-top: -9.6rem;
+    }
+
+    .social {
+        width: 14.5rem;
+    }
+
+    .social i {
+        width: 6rem;
+        margin-left: -1.8vw;
+    }
+
+    .spons-sep {
+        margin-top: -.17vw;
+    }
+
+    .spons-img {
+        width: 75%;
+        margin-left: 12.3vw;
+    }
+
+    .sponsors-btm {
+        width: 100%;
+        background-color: $font-white;
+    }
+
+    .spons-img-btm {
+        padding-left: 11vw;
+        padding-right: 11vw;
     }
 }
