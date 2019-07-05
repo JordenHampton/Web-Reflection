@@ -7,8 +7,8 @@
         <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk Netmatters</title>
         <link rel="stylesheet" href="css/normalize.css">
 
-        <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="js/slick/slick.css"/>
+        <link rel="stylesheet" href="js/slick/slick-theme.css"/>
 
         <link rel="stylesheet" href="css/homepage.css">
         
@@ -184,47 +184,62 @@
     <!-- \\\\\\\\   Nav   //////// -->
 
     <!-- \\\\\\\\   Top Image   //////// -->
-                <section class="top-image">
+                <div class="top-image">
+
+                    
                     <!-- Image 1 -->
-                    <!-- <div class="image-header">
-                            <h2 class="image-text">Web Design</h2>
-                            <p class="image-text">For businesses looking to make a strong and effective first impression</p>
-                            <a href="#"><h3 class="radius">Find out more <img src="img/svg/arrow-right-solid.svg"></h3></a>
-                    </div> -->
-                    <div class="top-img-1-container">
-                        <div class="img-1-wrap">
-                            <h2 class="img-1-h2">Web Design</h2>
-                            <p class="img-1-p">For businesses looking to make a strong and effective first impression</p>
+                    <div class="top-img-container-1">
+                        <div class="img-wrap">
+                            <h2 class="img-h2">Web Design</h2>
+                            <p class="img-p">For businesses looking to make a strong and effective first impression.</p>
                             <a href="#"><h3 class="radius img-1-btn">Find out more <img src="img/svg/arrow-right-solid.svg"></h3></a>
                         </div>
                     </div>
 
 
                     <!-- Image 2 -->
-                    <div>
-                        
+                    <div class="top-img-container-2">
+                        <div class="img-wrap">
+                            <h2 class="img-h2">IT Support</h2>
+                            <p class="img-p">Fast and cost-effective IT support services for your business.</p>
+                            <a href="#"><h3 class="radius img-2-btn">Find out more <img src="img/svg/arrow-right-solid.svg"></h3></a>
+                        </div>
                     </div>
                     <!-- Image 3 -->
-                    <div>
-
+                    <div class="top-img-container-3">
+                        <div class="img-wrap">
+                            <h2 class="img-h2">Telecoms Services</h2>
+                            <p class="img-p">Generating you new business through results-driven marketing activities.</p>
+                            <a href="#"><h3 class="radius img-3-btn">Find out more <img src="img/svg/arrow-right-solid.svg"></h3></a>
+                        </div>
                     </div>
                     <!-- Image 4 -->
-                    <div>
-
+                    <div class="top-img-container-4">
+                        <div class="img-wrap">
+                            <h2 class="img-h2">Bespoke Software</h2>
+                            <p class="img-p">A new approach to connectivity, see how we can help your business.</p>
+                            <a href="#"><h3 class="radius img-4-btn">Find out more <img src="img/svg/arrow-right-solid.svg"></h3></a>
+                        </div>
                     </div>
                     <!-- Image 5 -->
-                    <div>
-
+                    <div class="top-img-container-5">
+                        <div class="img-wrap">
+                            <h2 class="img-h2">Digital Marketing</h2>
+                            <p class="img-p">Bring your business together with solutions that grow with you.</p>
+                            <a href="#"><h3 class="radius img-5-btn">Find out more <img src="img/svg/arrow-right-solid.svg"></h3></a>
+                        </div>
                     </div>
                     <!-- Image 6 -->
-                    <div>
-
+                    <div class="top-img-container-6">
+                        <div class="img-wrap">
+                            <h2 class="img-h2">Cyber Security</h2>
+                            <p class="img-p">Keeping businesses and their customers sensitive information protected.</p>
+                            <a href="#"><h3 class="radius img-6-btn">Find out more <img src="img/svg/arrow-right-solid.svg"></h3></a>
+                        </div>
                     </div>
                     <!-- End of image carousel -->
-                </section>
-                <div class="seperator">
-                    <span></span>
                 </div>
+
     <!-- \\\\\\\\   End Top Image    //////// -->
 
     <!-- \\\\\\\\   Extra info about services   //////// -->
@@ -540,14 +555,18 @@
     <!-- \\\\\\\ SCRIPTS /////// -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
 
-    <!-- <script>
-        $('.your-class').slick({
-        setting-name: setting-value
+    <script>
+        $(document).ready(function(){
+        $('.top-image').slick({
+            dots: true,
+            arrows: false,
         });
-    </script> -->
+        });
+    </script>
 
     </body>
 </html>

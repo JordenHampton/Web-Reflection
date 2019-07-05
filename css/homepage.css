@@ -10,11 +10,6 @@ header {
   display: none;
 }
 
-.container {
-  display: -ms-grid;
-  display: grid;
-}
-
 .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +26,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: .9rem;
+  padding-top: 1.3rem;
+  margin-top: 0;
 }
 
 .head-right {
@@ -335,19 +331,33 @@ header {
   display: none;
 }
 
-.img-1-h2 {
+.img-h2 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 3rem;
   margin-top: 0;
 }
 
-.img-1-p {
+.img-p {
   line-height: 2.3rem;
   font-size: 1.4rem;
 }
 
-.top-img-1-container .radius {
+.top-img-container-1 {
+  background-color: cyan;
+  color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  height: 52rem;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/1.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/1.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+          box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+}
+
+.top-img-container-1 .radius {
   font-size: 1.3rem;
   font-weight: 400;
   color: #f1f1f1;
@@ -366,28 +376,208 @@ header {
 .img-1-btn img {
   width: 1rem;
   margin-left: .7rem;
+  display: initial;
 }
 
-.img-1-wrap {
-  position: absolute;
-  margin-top: 18rem;
-  margin-left: 10vw;
-  text-align: center;
-  width: 80%;
-}
-
-.top-img-1-container {
+.top-img-container-2 {
   background-color: cyan;
   color: #f1f1f1;
   text-align: center;
   width: 100%;
   height: 52rem;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url(../../img/carousel/1.jpg) no-repeat center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url(../../img/carousel/1.jpg) no-repeat center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/2.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/2.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
           box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+}
+
+.top-img-container-2 .radius {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.1rem 0;
+  text-transform: uppercase;
+  background-color: #4f7cdd;
+  width: 16rem;
+}
+
+.img-2-btn:hover {
+  background-color: #3166d7;
+}
+
+.img-2-btn img {
+  width: 1rem;
+  margin-left: .7rem;
+  display: initial;
+}
+
+.top-img-container-3 {
+  background-color: cyan;
+  color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  height: 52rem;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/3.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/3.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+          box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+}
+
+.top-img-container-3 .radius {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.1rem 0;
+  text-transform: uppercase;
+  background-color: #ce3838;
+  width: 16rem;
+}
+
+.img-3-btn:hover {
+  background-color: #b62d2d;
+}
+
+.img-3-btn img {
+  width: 1rem;
+  margin-left: .7rem;
+  display: initial;
+}
+
+.top-img-container-4 {
+  background-color: cyan;
+  color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  height: 52rem;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/4.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/4.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+          box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+}
+
+.top-img-container-4 .radius {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.1rem 0;
+  text-transform: uppercase;
+  background-color: #6c7fa7;
+  width: 16rem;
+}
+
+.img-4-btn:hover {
+  background-color: #5a6d96;
+}
+
+.img-4-btn img {
+  width: 1rem;
+  margin-left: .7rem;
+  display: initial;
+}
+
+.top-img-container-5 {
+  background-color: cyan;
+  color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  height: 52rem;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/5.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/5.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+          box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+}
+
+.top-img-container-5 .radius {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.1rem 0;
+  text-transform: uppercase;
+  background-color: #3bc067;
+  width: 16rem;
+}
+
+.img-5-btn:hover {
+  background-color: #33a558;
+}
+
+.img-5-btn img {
+  width: 1rem;
+  margin-left: .7rem;
+  display: initial;
+}
+
+.top-img-container-6 {
+  background-color: cyan;
+  color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  height: 52rem;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/6.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/6.jpg") no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+          box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
+}
+
+.top-img-container-6 .radius {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.1rem 0;
+  text-transform: uppercase;
+  background-color: #ec0349;
+  width: 16rem;
+}
+
+.img-6-btn:hover {
+  background-color: #c9033e;
+}
+
+.img-6-btn img {
+  width: 1rem;
+  margin-left: .7rem;
+  display: initial;
+}
+
+.img-wrap {
+  position: absolute;
+  margin-top: 18rem;
+  margin-left: 10vw;
+  text-align: center;
+  width: 80vw;
+}
+
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dots li button::before {
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #f1f1f1;
 }
 
 .services {
@@ -1399,17 +1589,52 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
-  .img-1-h2,
-  .img-1-p {
-    text-align: left;
-    width: 35rem;
-  }
-  .top-img-1-container .radius {
+  .top-img-container-1 .radius {
     text-align: center;
     margin-left: 0;
   }
-  .top-img-1-container {
+  .top-img-container-1 {
     height: 80vh;
+  }
+  .top-img-container-2 .radius {
+    text-align: center;
+    margin-left: 0;
+  }
+  .top-img-container-2 {
+    height: 80vh;
+  }
+  .top-img-container-3 .radius {
+    text-align: center;
+    margin-left: 0;
+  }
+  .top-img-container-3 {
+    height: 80vh;
+  }
+  .top-img-container-4 .radius {
+    text-align: center;
+    margin-left: 0;
+  }
+  .top-img-container-4 {
+    height: 80vh;
+  }
+  .top-img-container-5 .radius {
+    text-align: center;
+    margin-left: 0;
+  }
+  .top-img-container-5 {
+    height: 80vh;
+  }
+  .top-img-container-6 .radius {
+    text-align: center;
+    margin-left: 0;
+  }
+  .top-img-container-6 {
+    height: 80vh;
+  }
+  .img-h2,
+  .img-p {
+    text-align: left;
+    width: 35rem;
   }
   .about {
     background-image: url(../img/branded.png);

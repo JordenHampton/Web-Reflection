@@ -13,19 +13,22 @@
         display: flex;
     }
 
-    .img-1-h2,
-    .img-1-p {
+    @each $class, $color in $img-container {
+
+        .top-img-container-#{$class} .radius {
+            text-align: center;
+            margin-left: 0;
+        }
+
+        .top-img-container-#{$class} {
+            height: 80vh;
+        }
+    }
+
+    .img-h2,
+    .img-p {
         text-align: left;
         width: 35rem;
-    }
-
-    .top-img-1-container .radius {
-        text-align: center;
-        margin-left: 0;
-    }
-
-    .top-img-1-container {
-        height: 80vh;
     }
 
     .about {

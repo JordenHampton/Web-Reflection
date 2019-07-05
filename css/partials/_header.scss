@@ -9,17 +9,14 @@ header {
     display: none;
 }
 
-.container {
-    display: grid;
-}
-
 .header-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: .9rem;
+    padding-top: 1.3rem;
+    margin-top: 0;
 }
 
 .head-right {
