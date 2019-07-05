@@ -1,0 +1,185 @@
+.services {
+    @include box;
+    // width: 92.9vw;
+    // margin-left: 1.75vw;
+}
+
+.services .radius h2{
+    font-weight: 400;
+    margin-bottom: .8rem;
+}
+
+.services .radius p{
+    margin: 0 auto;
+    margin-top: .5rem;
+    width: 85%;
+    font-size: .8rem;
+    letter-spacing: .02rem;
+    line-height: 1.4rem;
+}
+
+.serv-brd {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: $font-white;
+    border: 1px solid $c-border;
+}
+
+.serv-icon {
+    color: $font-white;
+    margin-top: 1.15rem;
+}
+
+.line {
+    width: 1.8rem;
+    height: .2rem;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.services a > div{
+    height: 19rem;
+
+}
+
+.serv-web:hover {
+    background-color: $c-web;
+    color: $font-white;
+
+    .serv-circle-web,
+    .read,
+    .fa-code,
+    .line {
+        background-color: $font-white;
+        color: $c-web;
+    }
+    
+}
+
+.serv-circle-web {
+    @include serv-circle;
+    background-color: $c-web;
+}
+
+.serv-web h3 {
+    @include button;
+    background-color: $c-web;
+}
+
+.serv-it:hover {
+    background-color: $c-it;
+    color: $font-white;
+
+    .serv-circle-it,
+    .read,
+    .fa-desktop,
+    .line {
+        background-color: $font-white;
+        color: $c-it;
+    }
+    
+}
+
+.serv-circle-it {
+    @include serv-circle;
+    background-color: $c-it;
+}
+
+.serv-it h3{
+    @include button;
+    background-color: $c-it;
+}
+
+.serv-tele:hover {
+    background-color: $c-tele;
+    color: $font-white;
+
+    .serv-circle-tele,
+    .read,
+    .fa-phone,
+    .line {
+        background-color: $font-white;
+        color: $c-tele;
+    }
+    
+}
+
+.serv-circle-tele {
+    @include serv-circle;
+    background-color: $c-tele;
+}
+.serv-tele h3{
+    @include button;
+    background-color: $c-tele;
+}
+
+.serv-soft:hover {
+    background-color: $c-soft;
+    color: $font-white;
+
+    .serv-circle-soft,
+    .read,
+    .fa-th,
+    .line {
+        background-color: $font-white;
+        color: $c-soft;
+    }
+    
+}
+
+.serv-circle-soft {
+    @include serv-circle;
+    background-color: $c-soft;
+}
+.serv-soft h3{
+    @include button;
+    background-color: $c-soft;
+}
+
+.serv-mark:hover {
+    background-color: $c-mark;
+    color: $font-white;
+
+    .serv-circle-mark,
+    .read,
+    .fa-chart-bar,
+    .line {
+        background-color: $font-white;
+        color: $c-mark;
+    }
+    
+}
+
+.serv-circle-mark {
+    @include serv-circle;
+    background-color: $c-mark;
+}
+.serv-mark h3{
+    @include button;
+    background-color: $c-mark;
+}
+
+
+
+.serv-cyber:hover {
+    background-color: $c-cyber;
+    color: $font-white;
+
+    .serv-circle-cyber,
+    .read,
+    .fa-shield-alt,
+    .line {
+        background-color: $font-white;
+        color: $c-cyber;
+    }
+    
+}
+
+.serv-circle-cyber {
+    @include serv-circle;
+    background-color: $c-cyber;
+}
+.serv-cyber h3{
+    @include button;
+    background-color: $c-cyber;
+}

@@ -1,0 +1,50 @@
+.top-image {
+    position: absolute;
+    background-color: cyan;
+    color: $font-white;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    background: url(../img/working-cover.jpg) no-repeat center;
+    background-size: cover;
+    box-shadow: inset 250px 0 300px #000;
+}
+
+.image-header {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.image-header h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3rem;
+    margin-top: 25vh;
+}
+
+.image-header p {
+    line-height: 2.3rem;
+    font-size: 1.4rem;
+}
+
+.image-header .radius {
+    background-color: $c-web;
+    @include button-arrow;
+    width: 16rem;
+}
+
+.image-header .radius:hover {
+    background-color: darken($c-web, 7%)
+}
+
+.image-header .radius img {
+    width: 1rem;
+    margin-left: .7rem;
+}
+
+// Moves everything down below image
+.seperator {
+    height: 94vh;
+}

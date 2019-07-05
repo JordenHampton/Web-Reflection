@@ -1,0 +1,191 @@
+.news-head {
+    background-color: $font-white;
+    color: $c-about;
+    margin: 0 auto;
+    padding: 1.2rem 0rem;
+    text-transform: uppercase;
+    font-size: .85rem;
+    height: 6rem;
+}
+
+.news-head h2,
+.news-line {
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+}
+
+.news-line {
+    position: absolute;
+    width: 4.2rem;
+    height: .3rem;
+    background-color: $c-about;
+    margin-left: 3.5%;
+    margin-top: 1.9rem;
+}
+
+
+.news {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+}
+.news-content-wrapper {
+    @include box;
+    margin-top: 3rem;
+    text-align: left;
+    height: 90%;
+    display: flex;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay img {
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid $c-border;
+}
+
+.overlay h4 {
+    position: absolute;
+    background-color: $c-web;
+    text-align: center;
+    text-transform: uppercase;
+    color: $font-white;
+    font-size: .84rem;
+    font-weight: 400;
+    padding: .25rem .6rem;
+}
+
+.news-content h2 a {
+    color: $c-web;
+}
+
+.news-content h2 a:hover {
+    text-decoration: underline;
+}
+
+.overlay :nth-child(2):hover {
+    .view-all,
+    .speech-point {
+        display: block;
+    }
+}
+
+.overlay a {
+    color: $font-white;
+}
+
+.overlay h4:hover {
+    text-decoration: underline;
+}
+
+.over-cont {
+    position: absolute;
+    margin-top: -52vw;
+    right: 0%; 
+}
+
+.over-cont p,
+.over-cont h4,
+.speech-point {
+    right: 0%;
+}
+
+.view-all,
+.speech-point {
+    margin-top: -2.8rem;
+    display: none;
+}
+
+.speech-point {
+    position: absolute;
+    background-color: $c-pop;
+    width: .8rem;
+    height: .8rem;
+    transform: rotate(45deg);
+    margin-top: -.25rem;
+    margin-right: 1.2rem;
+}
+
+.overlay p {
+    position: absolute;
+    background-color: $c-pop;
+    text-align: center;
+    color: $font-white;
+    font-size: .75rem;
+    font-weight: 400;
+    padding: .7rem .6rem;
+    width: 10rem;
+}
+
+.news-content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.news-main {
+    margin-bottom: 3rem;
+}
+
+.news-content h2 {
+    color: $c-web;
+    font-size: 1.05rem;
+    margin-top: 2rem;
+}
+
+.news-content p {
+    color: $c-news;
+    font-size: .84rem;
+    line-height: 1.4rem;
+}
+
+.news-content h3 {
+    @include button;
+    background-color: $c-web;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 1.4rem;
+    width: 8.6rem;
+}
+
+.news-content h3:hover {
+    background-color: darken($c-web, 10%);
+}
+
+.news-content img {
+    @include serv-circle;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
+}
+
+.news-main .read {
+    margin-bottom: -4vw;
+}
+
+.news-seperator {
+    width: 100%;
+    height: .1rem;
+    background-color: $c-border;
+}
+
+.news-footer {
+    display: flex;
+    justify-content: left;
+}
+
+.author {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.2rem 2rem;
+    padding-bottom: 2.8rem;
+}
+
+.author h2 {
+    color: $c-about;
+}

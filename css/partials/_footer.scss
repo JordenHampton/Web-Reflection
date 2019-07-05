@@ -1,0 +1,73 @@
+.footer {
+    background-color: $c-about;
+    height: 57rem;
+    margin-top: 4rem;
+    line-height: 1.4rem;
+    letter-spacing: .04rem;
+    display: flex;
+    flex-direction: column;
+    color: $font-white;
+    // width: 96.3vw;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    margin: 0 auto;
+    margin-left: 2.5vw;
+}
+
+.social i {
+    font-size: 1.6rem;
+    background-color: $c-social;
+    border-radius: 1px;
+    text-align: center;
+    padding: 1rem;
+    width: 40vw;
+}
+
+.footer h3,
+.footer p {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.footer p:nth-of-type(4) {
+    margin-bottom: 1.3rem;
+}
+
+.footer h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer a {
+    font-size: .8rem;
+    color: $font-white;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: .8rem;
+}
+
+
+.fa-facebook-f:hover {
+    background-color: rgb(61, 94, 201)
+}
+
+.fa-twitter:hover {
+    background-color: rgb(0, 162, 255);
+}
+
+.fa-linkedin-in:hover {
+    background-color: rgb(14, 117, 177);
+}

@@ -1,0 +1,35 @@
+
+@import 'partials/variables',
+        'partials/mixins',
+        'partials/header',
+        'partials/nav',
+        'partials/topImage',
+        'partials/services',
+        'partials/about',
+        'partials/news',
+        'partials/footer',
+        'partials/media768',
+        'partials/media991',
+        'partials/media1300';
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(231, 231, 231);
+    margin: 0 auto;
+    font-family: 'poppins', sans-serif;
+}
+
+.radius {
+    border-radius: 3px;
+    background-color: #ddd;
+}
+
+a {
+    color: #000;
+}

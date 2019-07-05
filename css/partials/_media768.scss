@@ -1,0 +1,397 @@
+// To hide sponsors on lower res displays.
+.sponsors-top,
+.sponsors-btm {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+
+    .sponsors-btm,
+    .sponsors-top {
+        display: initial;
+    }
+
+    .head-right .fa-phone {
+        display: none;
+    }
+
+    .services {
+        @include box;
+    }
+
+    .services a {
+        width: 49%;
+    }
+    
+    .art-3 {
+        display: none;
+    }
+    
+    .news-container {
+        display: flex;
+    }
+
+    .news {
+        width: 50%;
+    }
+
+    .over-cont {
+        margin-top: -26.9vw;
+        right: 0%; 
+    }
+
+    .footer {
+        height: 33.6rem;
+    }
+
+    .foot-contact,
+    .foot-about,
+    .foot-legal,
+    .foot-social {
+        margin-left: 1vw;
+        width: 48%;
+    }
+
+    .foot-about {
+        margin-left: 50vw;
+        margin-top: -15.14rem;
+    }
+
+    .foot-social {
+        margin-left: 50vw;
+        margin-top: -9.6rem;
+    }
+
+    .social i {
+        margin-left: -1.2vw;
+        width: 20vw;
+    }
+
+
+    // change the background of the news section to a gradient
+    article {
+        background: linear-gradient(to bottom, #e7e7e7, $font-white);
+    }
+
+    .spons-sep {
+        position: absolute;
+        z-index: -1000;
+        margin-top: -.4vw;
+        width: 100%;
+        height: 3rem;
+        background-color: $font-white;
+    }
+
+    .spons-img {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5rem;
+    }
+
+    .spons-img-btm {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 0;
+    }
+
+    .gray-hover {
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+
+    //\\\\\\\\\\\\\\\\\\\\\\\\\\
+    //\\\\ SPONSOR TOOLTIP \\\\\
+    //\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+    .busseys-pos {
+        position: absolute;
+    }
+
+    .busseys-box {
+        background-color: $c-about;
+        width: 17rem;
+        height: 9rem;
+        margin-left: -4.2rem;
+        margin-top: -11.2rem;
+        z-index: 10;
+    }
+
+    .busseys-write {
+        text-align: center;
+        color: $font-white;
+        margin-left: 0rem;
+    }
+
+    h3.busseys-write {
+        font-weight: 400;
+        margin-left: -0.5rem;
+    }
+
+    p.busseys-write {
+        margin-left: 1.5rem;
+        width: 80%;
+        margin-top: 2rem;
+        font-size: .85rem;
+        line-height: 1.4rem;
+    }
+
+    .busseys-box-sep {
+        margin-left: 3.2rem;
+        margin-top: -7.7rem;
+        z-index: 11;
+        height: .2rem;
+        width: 1.7rem;
+        background-color: $font-white;
+    }
+
+    .busseys-speech {
+        background-color: $c-about;
+        width: 5rem;
+        height: 5rem;
+        transform: rotate(45deg);
+        border-radius: 100% 100% 0% 100%;
+        margin-left: 1.5rem;
+        margin-top: -6.15rem;
+    }
+
+
+    .busseys-visible {
+        visibility: hidden;
+    }
+
+    .busseys {
+        width: 8rem;
+        visibility: visible;
+    }
+
+    .busseys-visible:hover {
+        visibility: visible;
+    }
+
+    .crane-pos {
+        position: absolute;
+    }
+
+    .crane-box {
+        background-color: $c-about;
+        width: 17rem;
+        height: 12rem;
+        margin-left: -2.5rem;
+        margin-top: -14.2rem;
+        z-index: 10;
+    }
+
+    .crane-write {
+        text-align: center;
+        color: $font-white;
+        margin-left: 0rem;
+    }
+
+    h3.crane-write {
+        font-weight: 400;
+        margin-left: -0.5rem;
+        margin-top: 1.4rem;
+    }
+
+    p.crane-write {
+        margin-left: 1.5rem;
+        width: 80%;
+        margin-top: 2rem;
+        font-size: .85rem;
+        line-height: 1.4rem;
+    }
+
+    .crane-box-sep {
+        margin-left: 5.1rem;
+        margin-top: -10.5rem;
+        z-index: 11;
+        height: .2rem;
+        width: 1.7rem;
+        background-color: $font-white;
+    }
+
+    .crane-speech {
+        background-color: $c-about;
+        width: 5rem;
+        height: 5rem;
+        transform: rotate(45deg);
+        border-radius: 100% 100% 0% 100%;
+        margin-left: 3.5rem;
+        margin-top: -6.15rem;
+    }
+
+
+    .crane-visible {
+        visibility: hidden;
+    }
+
+    .crane {
+        width: 12rem;
+        visibility: visible;
+    }
+
+    .crane-visible:hover {
+        visibility: visible;
+    }
+
+    .beat-pos {
+        position: absolute;
+    }
+
+    .beat-box {
+        background-color: $c-about;
+        width: 17rem;
+        height: 8.5rem;
+        margin-left: -6.5rem;
+        margin-top: -10.7rem;
+        z-index: 10;
+    }
+
+    .beat-write {
+        text-align: center;
+        color: $font-white;
+        margin-left: 0rem;
+    }
+
+    h3.beat-write {
+        font-weight: 400;
+        margin-left: -0.65rem;
+        margin-top: 1.1rem;
+    }
+
+    p.beat-write {
+        margin-left: 1.5rem;
+        width: 80%;
+        margin-top: 1.9rem;
+        font-size: .85rem;
+        line-height: 1.4rem;
+    }
+
+    .beat-box-sep {
+        margin-left: 0.85rem;
+        margin-top: -7.45rem;
+        z-index: 11;
+        height: .2rem;
+        width: 1.7rem;
+        background-color: $font-white;
+    }
+
+    .beat-speech {
+        background-color: $c-about;
+        width: 5rem;
+        height: 5rem;
+        transform: rotate(45deg);
+        border-radius: 100% 100% 0% 100%;
+        margin-left: -.8rem;
+        margin-top: -6.25rem;
+    }
+
+
+    .beat-visible {
+        visibility: hidden;
+    }
+
+    .beat {
+        width: 3rem;
+        visibility: visible;
+    }
+
+    .beat-visible:hover {
+        visibility: visible;
+    }
+
+    .northern-driver-pos {
+        position: absolute;
+    }
+
+    .northern-driver-box {
+        background-color: $c-about;
+        width: 17rem;
+        height: 11rem;
+        margin-left: -1.9rem;
+        margin-top: -13.2rem;
+        z-index: 10;
+    }
+
+    .northern-driver-write {
+        text-align: center;
+        color: $font-white;
+        margin-left: 0rem;
+    }
+
+    h3.northern-driver-write {
+        font-weight: 400;
+        margin-left: -0.4rem;
+        margin-top: 1.2rem;
+    }
+
+    p.northern-driver-write {
+        margin-left: 1.5rem;
+        width: 80%;
+        margin-top: 1.8rem;
+        font-size: .85rem;
+        line-height: 1.4rem;
+    }
+
+    .northern-driver-box-sep {
+        margin-left: 5.8rem;
+        margin-top: -9.75rem;
+        z-index: 11;
+        height: .2rem;
+        width: 1.7rem;
+        background-color: $font-white;
+    }
+
+    .northern-driver-speech {
+        background-color: $c-about;
+        width: 5rem;
+        height: 5rem;
+        transform: rotate(45deg);
+        border-radius: 100% 100% 0% 100%;
+        margin-left: 4.2rem;
+        margin-top: -6.1rem;
+    }
+
+
+    .northern-driver-visible {
+        visibility: hidden;
+    }
+
+    .northern-driver {
+        width: 14rem;
+        visibility: visible;
+    }
+
+    .northern-driver-visible:hover {
+        visibility: visible;
+    }
+
+    //\\\\\\\\\\\\\\\\\\\\\\\\\\
+    //\\ END SPONSOR TOOLTIP \\\
+    //\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+    .sponsors-btm img:first-of-type {
+        height: 5rem;
+    }
+
+    .sponsors-btm img:nth-of-type(2) {
+        height: 6.8rem;
+    }
+
+    .sponsors-btm img:nth-of-type(3) {
+        height: 6rem;
+    }
+
+    .sponsors-btm img:last-of-type {
+        height: 5rem;
+    }
+
+    .footer {
+        margin-top: 2.5rem;
+    }
+}

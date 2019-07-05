@@ -1,0 +1,55 @@
+.about {
+    background-color: $c-about;
+    color: white;
+    text-align: left;
+    // width: 96.3vw;
+}
+
+.about-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.6rem;
+    padding-top: 1rem;
+    line-height: 1.7rem;
+    font-size: 1.03rem;
+    padding-bottom: 3rem;
+}
+
+.about h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+
+.about p:first-of-type {
+    font-weight: 600;
+}
+
+.about p {
+    padding-bottom: .5rem;
+}
+
+.about p:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.about h3 {
+    @include button-arrow;
+    display: inline;
+    text-align: center;
+    background-color: $font-white;
+    color: $c-about;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-left: 0rem;
+}
+
+.about-wrapper h3:hover {
+    background-color: darken($font-white, 8%);
+}
+
+.about i {
+    color: $c-about;
+    width: 1rem;
+    margin-left: .7rem;
+}

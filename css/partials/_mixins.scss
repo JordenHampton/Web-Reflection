@@ -1,0 +1,61 @@
+@mixin serv-circle {
+    font-size: 1.4rem;
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 1.9rem;
+}
+
+@mixin button {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: $font-white;
+    width: 8.8rem;
+    margin: 0 auto;
+    padding: .7rem 0;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 1.7rem;
+}
+
+@mixin button-arrow {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $font-white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.1rem 0;
+    text-transform: uppercase;
+}
+
+@mixin box {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: .8rem;
+}
+
+@mixin nav-hover {
+    background-color: none;
+    top: 6.8rem;
+    width: 15.2vw;
+    height: 6.4rem;
+    position: absolute;
+}
+
+@mixin box {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: .8rem;
+}

@@ -1,0 +1,116 @@
+header {
+    background-color: $font-white;
+    color: white;
+    height: 6.8rem;
+    width: 100%;
+} 
+
+.lg {
+    display: none;
+}
+
+.container {
+    display: grid;
+}
+
+.header-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: .9rem;
+}
+
+.head-right {
+    display: flex;
+    margin-right: 3vw;
+}
+
+.head-logo {
+    max-width: 65%;
+    margin-left: 1vw;
+    // margin-right: 15px;
+}
+
+.headset,
+.plane {
+    @include button;
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 4rem;
+    border-radius: 4px;
+    padding: 0rem;
+    margin: 0;
+    height: 3.7rem;
+}
+
+.headset i,
+.plane i {
+    margin-top: 1rem;
+}
+
+.headset {
+    background-color: $c-it;
+
+    &:hover {
+        background-color: darken($c-it, 6%);
+    }
+}
+
+.plane {
+    background-color: $c-contact;
+
+    &:hover {
+        background-color: darken($c-contact, 10%);
+    }
+}
+
+
+.phone {
+    font-size: 1.7rem;
+    transform: scaleX(-1);
+    margin: .7rem .7rem 0 .5rem;
+    color: $c-header; 
+}
+
+.phone:hover {
+    color: darken($c-header, 8%);
+    border-bottom: 1px solid #000;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    margin-bottom: .4rem;
+}
+
+.fig {
+    color: $font-white;
+    background-color: $c-header;
+    font-size: .7rem;
+    padding: .4rem .8rem;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fig:hover {
+    background-color: darken(rgb(42, 43, 59), 8%);
+}
+
+
+.fig img:first-of-type {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 auto;
+}
+
+.fig figcaption {
+    margin-top: -4px;
+    
+}
+
+.menu p {
+    margin: 0;
+}

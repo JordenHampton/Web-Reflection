@@ -1,0 +1,225 @@
+@media (min-width: 991px) {
+
+    .head-right a {
+        margin-left: 1.4rem;
+    }
+
+    .plane,
+    .headset {
+        display: flex;
+    }
+
+    .main-nav {
+        display: flex;
+    }
+
+    .image-text {
+        text-align: left;
+        width: 35rem;
+    }
+
+    .image-header .radius {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .about {
+        background-image: url(../img/branded.png);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .news-overflow {
+        overflow: hidden;
+    }
+
+    .overlay img {
+        transition: all .2s ease-in-out;
+    }
+
+    .overlay img:hover {
+        transform: scale(1.1);
+        filter: invert(20%) brightness(130%);
+    }
+
+    .web-active:hover {
+
+        cursor: pointer;
+
+        ~ .main-nav .nav-web {
+            background-color: $c-web;
+        }
+
+        ~ .main-nav .nav-web .fa-code {
+            color: $font-white;
+        }
+
+        ~ .web-opt {
+            display: flex;
+        }
+    }
+
+    .web-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-web {
+            background-color: $c-web;
+        }
+
+        ~ .main-nav .nav-web .fa-code {
+            color: $font-white;
+        }
+
+    }
+
+    .it-active:hover {
+
+        cursor: pointer;
+
+        ~ .main-nav .nav-it {
+            background-color: $c-it;
+        }
+
+        ~ .main-nav .nav-it .fa-desktop {
+            color: $font-white;
+        }
+
+        ~ .it-opt {
+            display: flex;
+        }
+    }
+
+    .it-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-it {
+            background-color: $c-it;
+        }
+
+        ~ .main-nav .nav-it .fa-desktop {
+            color: $font-white;
+        }
+
+    }
+
+    .tele-active:hover {
+
+        cursor: pointer;
+
+        ~ .main-nav .nav-tele {
+            background-color: $c-tele;
+        }
+
+        ~ .main-nav .nav-tele .fa-phone {
+            color: $font-white;
+        }
+
+        ~ .tele-opt {
+            display: flex;
+        }
+    }
+
+    .tele-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-tele {
+            background-color: $c-tele;
+        }
+
+        ~ .main-nav .nav-tele .fa-phone {
+            color: $font-white;
+        }
+
+    }
+
+    .soft-active:hover {
+
+        cursor: pointer;
+
+        ~ .main-nav .nav-soft {
+            background-color: $c-soft;
+        }
+
+        ~ .main-nav .nav-soft .fa-th {
+            color: $font-white;
+        }
+
+        ~ .soft-opt {
+            display: flex;
+        }
+    }
+
+    .soft-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-soft {
+            background-color: $c-soft;
+        }
+
+        ~ .main-nav .nav-soft .fa-th {
+            color: $font-white;
+        }
+
+    }
+
+    .mark-active:hover {
+
+        cursor: pointer;
+
+        ~ .main-nav .nav-mark {
+            background-color: $c-mark;
+        }
+
+        ~ .main-nav .nav-mark .fa-chart-bar {
+            color: $font-white;
+        }
+
+        ~ .mark-opt {
+            display: flex;
+        }
+    }
+
+    .mark-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-mark {
+            background-color: $c-mark;
+        }
+
+        ~ .main-nav .nav-mark .fa-chart-bar {
+            color: $font-white;
+        }
+
+    }
+
+    .cyber-active:hover {
+
+        cursor: pointer;
+
+        ~ .main-nav .nav-cyber {
+            background-color: $c-cyber;
+        }
+
+        ~ .main-nav .nav-cyber .fa-shield-alt {
+            color: $font-white;
+        }
+
+        ~ .cyber-opt {
+            display: flex;
+        }
+    }
+
+    .cyber-opt:hover {
+        display: flex;
+
+        ~ .main-nav .nav-cyber {
+            background-color: $c-cyber;
+        }
+
+        ~ .main-nav .nav-cyber .fa-shield-alt {
+            color: $font-white;
+        }
+
+    }
+}
