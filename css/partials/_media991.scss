@@ -13,14 +13,19 @@
         display: flex;
     }
 
-    .image-text {
+    .img-1-h2,
+    .img-1-p {
         text-align: left;
         width: 35rem;
     }
 
-    .image-header .radius {
+    .top-img-1-container .radius {
         text-align: center;
         margin-left: 0;
+    }
+
+    .top-img-1-container {
+        height: 80vh;
     }
 
     .about {
