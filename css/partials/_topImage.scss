@@ -20,7 +20,7 @@
         color: $font-white;
         text-align: center;
         width: 100%;
-        height: 52rem;
+        height: 53.5rem;
         margin: 0 auto;
         background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url('../../img/carousel/#{$class}.jpg') no-repeat center ;
         background-size: cover;
@@ -57,10 +57,18 @@
 }
 
 .slick-dots li button::before {
-    font-size: 1rem;
+    font-size: .9rem;
     color: $font-white;
 }
 
 .slick-dots li.slick-active button::before {
+    font-size: 1rem;
     color: $font-white;
+    border: 2px solid $font-white;
+    border-radius: 50%;
+    padding: 2px;
+    padding-left: 2px;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin: -4px;
 }

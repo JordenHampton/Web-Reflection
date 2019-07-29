@@ -348,7 +348,7 @@ header {
   color: #f1f1f1;
   text-align: center;
   width: 100%;
-  height: 52rem;
+  height: 53.5rem;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/1.jpg") no-repeat center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/1.jpg") no-repeat center;
@@ -384,7 +384,7 @@ header {
   color: #f1f1f1;
   text-align: center;
   width: 100%;
-  height: 52rem;
+  height: 53.5rem;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/2.jpg") no-repeat center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/2.jpg") no-repeat center;
@@ -420,7 +420,7 @@ header {
   color: #f1f1f1;
   text-align: center;
   width: 100%;
-  height: 52rem;
+  height: 53.5rem;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/3.jpg") no-repeat center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/3.jpg") no-repeat center;
@@ -456,7 +456,7 @@ header {
   color: #f1f1f1;
   text-align: center;
   width: 100%;
-  height: 52rem;
+  height: 53.5rem;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/4.jpg") no-repeat center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/4.jpg") no-repeat center;
@@ -492,7 +492,7 @@ header {
   color: #f1f1f1;
   text-align: center;
   width: 100%;
-  height: 52rem;
+  height: 53.5rem;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/5.jpg") no-repeat center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/5.jpg") no-repeat center;
@@ -528,7 +528,7 @@ header {
   color: #f1f1f1;
   text-align: center;
   width: 100%;
-  height: 52rem;
+  height: 53.5rem;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/6.jpg") no-repeat center;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/6.jpg") no-repeat center;
@@ -572,12 +572,20 @@ header {
 }
 
 .slick-dots li button::before {
-  font-size: 1rem;
+  font-size: .9rem;
   color: #f1f1f1;
 }
 
 .slick-dots li.slick-active button::before {
+  font-size: 1rem;
   color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+  border-radius: 50%;
+  padding: 2px;
+  padding-left: 2px;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin: -4px;
 }
 
 .services {
