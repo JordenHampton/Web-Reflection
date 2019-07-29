@@ -10,7 +10,8 @@
         'partials/footer',
         'partials/media768',
         'partials/media991',
-        'partials/media1300';
+        'partials/media1300',
+        'partials/mobileNav';
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
 
@@ -27,7 +28,6 @@ body {
 
 .radius {
     border-radius: 3px;
-    background-color: #ddd;
 }
 
 a {
