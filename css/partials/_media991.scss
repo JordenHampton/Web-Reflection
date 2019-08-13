@@ -51,183 +51,99 @@
         filter: invert(20%) brightness(130%);
     }
 
-    .web-active:hover {
+    .nav-web-container:hover {
+        .nav-web {
 
-        cursor: pointer;
-
-        ~ .main-nav .nav-web {
+            cursor: pointer;
             background-color: $c-web;
+            
+            .fas {
+                color: $font-white;
+            }
+            
         }
-
-        ~ .main-nav .nav-web .fa-code {
-            color: $font-white;
-        }
-
-        ~ .web-opt {
+        .web-opt {
             display: flex;
         }
     }
 
-    .web-opt:hover {
-        display: flex;
+    .nav-it-container:hover {
+        .nav-it {
 
-        ~ .main-nav .nav-web {
-            background-color: $c-web;
-        }
-
-        ~ .main-nav .nav-web .fa-code {
-            color: $font-white;
-        }
-
-    }
-
-    .it-active:hover {
-
-        cursor: pointer;
-
-        ~ .main-nav .nav-it {
+            cursor: pointer;
             background-color: $c-it;
+            
+            .fas {
+                color: $font-white;
+            }
+            
         }
-
-        ~ .main-nav .nav-it .fa-desktop {
-            color: $font-white;
-        }
-
-        ~ .it-opt {
+        .it-opt {
             display: flex;
         }
     }
 
-    .it-opt:hover {
-        display: flex;
+    .nav-tele-container:hover {
+        .nav-tele {
 
-        ~ .main-nav .nav-it {
-            background-color: $c-it;
-        }
-
-        ~ .main-nav .nav-it .fa-desktop {
-            color: $font-white;
-        }
-
-    }
-
-    .tele-active:hover {
-
-        cursor: pointer;
-
-        ~ .main-nav .nav-tele {
+            cursor: pointer;
             background-color: $c-tele;
+            
+            .fas {
+                color: $font-white;
+            }
+            
         }
-
-        ~ .main-nav .nav-tele .fa-phone {
-            color: $font-white;
-        }
-
-        ~ .tele-opt {
+        .tele-opt {
             display: flex;
         }
     }
 
-    .tele-opt:hover {
-        display: flex;
+    .nav-soft-container:hover {
+        .nav-soft {
 
-        ~ .main-nav .nav-tele {
-            background-color: $c-tele;
-        }
-
-        ~ .main-nav .nav-tele .fa-phone {
-            color: $font-white;
-        }
-
-    }
-
-    .soft-active:hover {
-
-        cursor: pointer;
-
-        ~ .main-nav .nav-soft {
+            cursor: pointer;
             background-color: $c-soft;
+            
+            .fas {
+                color: $font-white;
+            }
+            
         }
-
-        ~ .main-nav .nav-soft .fa-th {
-            color: $font-white;
-        }
-
-        ~ .soft-opt {
+        .soft-opt {
             display: flex;
         }
     }
 
-    .soft-opt:hover {
-        display: flex;
+    .nav-mark-container:hover {
+        .nav-mark {
 
-        ~ .main-nav .nav-soft {
-            background-color: $c-soft;
-        }
-
-        ~ .main-nav .nav-soft .fa-th {
-            color: $font-white;
-        }
-
-    }
-
-    .mark-active:hover {
-
-        cursor: pointer;
-
-        ~ .main-nav .nav-mark {
+            cursor: pointer;
             background-color: $c-mark;
+            
+            .fas {
+                color: $font-white;
+            }
+            
         }
-
-        ~ .main-nav .nav-mark .fa-chart-bar {
-            color: $font-white;
-        }
-
-        ~ .mark-opt {
+        .mark-opt {
             display: flex;
         }
     }
 
-    .mark-opt:hover {
-        display: flex;
+    .nav-cyber-container:hover {
+        .nav-cyber {
 
-        ~ .main-nav .nav-mark {
-            background-color: $c-mark;
-        }
-
-        ~ .main-nav .nav-mark .fa-chart-bar {
-            color: $font-white;
-        }
-
-    }
-
-    .cyber-active:hover {
-
-        cursor: pointer;
-
-        ~ .main-nav .nav-cyber {
+            cursor: pointer;
             background-color: $c-cyber;
+            
+            .fas {
+                color: $font-white;
+            }
+            
         }
-
-        ~ .main-nav .nav-cyber .fa-shield-alt {
-            color: $font-white;
-        }
-
-        ~ .cyber-opt {
+        .cyber-opt {
             display: flex;
         }
-    }
-
-    .cyber-opt:hover {
-        display: flex;
-
-        ~ .main-nav .nav-cyber {
-            background-color: $c-cyber;
-        }
-
-        ~ .main-nav .nav-cyber .fa-shield-alt {
-            color: $font-white;
-        }
-
     }
 }

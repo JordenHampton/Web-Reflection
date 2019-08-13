@@ -1,9 +1,11 @@
 .mobile-nav-container {
     background-color: $c-about;
     width: 18rem;
-    height: 100%;
-    position: sticky;
-    display: inline-block;
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    z-index: 10000;
 }
 
 .mobile-nav-btn {

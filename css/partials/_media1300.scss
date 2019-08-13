@@ -19,14 +19,13 @@
         justify-content: space-between;
     }
 
-    .main-nav div {
+    .upper-menu {
         border-left: 1px solid darken($c-header, 4%);
         border-right: 1px solid lighten($c-header, 4%);
         width: $nav;
     }
 
-    .main-nav div:first-of-type,
-    .main-nav div:last-of-type {
+    .nav-sep {
         width: 16.3vw;
     }
 

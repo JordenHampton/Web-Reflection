@@ -24,12 +24,11 @@
     font-weight: 400;
 }
 
-.main-nav div:first-of-type,
-.main-nav div:last-of-type {
+.nav-sep {
     width: 3.5vw;
 }
 
-.main-nav div {
+.upper-menu {
     width: 15.2vw;
     padding-top: 1.3rem;
     padding-bottom: .3rem;
@@ -84,35 +83,35 @@
 
 // Non-visible boxes for nav menu
 
-.web-active {
-    @include nav-hover;
-    left: 3.6vw;
-}
+// .web-active {
+//     @include nav-hover;
+//     left: 3.6vw;
+// }
 
-.it-active {
-    @include nav-hover;
-    left: 18.9vw;
-}
+// .it-active {
+//     @include nav-hover;
+//     left: 18.9vw;
+// }
 
-.tele-active {
-    @include nav-hover;
-    left: 34.2vw;
-}
+// .tele-active {
+//     @include nav-hover;
+//     left: 34.2vw;
+// }
 
-.soft-active {
-    @include nav-hover;
-    left: 49.5vw;
-}
+// .soft-active {
+//     @include nav-hover;
+//     left: 49.5vw;
+// }
 
-.mark-active {
-    @include nav-hover;
-    left: 64.6vw;
-}
+// .mark-active {
+//     @include nav-hover;
+//     left: 64.6vw;
+// }
 
-.cyber-active {
-    @include nav-hover;
-    left: 80vw;
-}
+// .cyber-active {
+//     @include nav-hover;
+//     left: 80vw;
+// }
 
 // End of non-visible boxes
 
@@ -161,4 +160,13 @@
 .mark-opt,
 .cyber-opt {
     display: none;
+}
+
+.nav-menu h3,
+.nav-menu h4 {
+    margin-top: 1.5rem;
+}
+
+.nav-menu {
+    left: 0;
 }
