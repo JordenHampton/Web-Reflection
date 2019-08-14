@@ -1,5 +1,21 @@
 @media (min-width: 991px) {
 
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-nav-container {
+        width: 24rem;
+    }
+
+    .nav-menu{
+        width: 100%;
+    }
+
+    .page-cover {
+        width: calc(100% - 24rem);
+    }
+
     .head-right a {
         margin-left: 1.4rem;
     }

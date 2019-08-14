@@ -1,11 +1,23 @@
+.page-cover {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: calc(100% - 18rem);
+    z-index: 100000;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+}
+
 .mobile-nav-container {
     background-color: $c-about;
     width: 18rem;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     display: none;
     top: 0;
     right: 0;
     z-index: 10000;
+    overflow-y: scroll;
 }
 
 .mobile-nav-btn {

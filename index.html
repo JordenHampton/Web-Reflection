@@ -16,6 +16,17 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     </head>
     <body>
+
+
+            <div class="page-cover">
+            </div>
+        <!-- Cookie Popup -->
+
+        <!-- <div class="cookie-container">
+            <p class="cookie-text">This site uses cookies. By continuing to use our site you agree to allow us to store cookies from your visit.</p>
+            <p class="cookie-close">x</p>
+        </div> -->
+
         <div class="main-container">
             <div class="container">
                 
@@ -197,12 +208,16 @@
                     </nav>
         <!-- \\\\\\\\   Nav   //////// -->
 
+
+                    
+
+
         <!-- \\\\\\\\   Mobile Nav   //////// -->
                     <div class="mobile-nav-container">
-                        <a href=""><div class="mobile-nav-btn mobile-contact">
+                        <a href=""><div class="mobile-nav-btn mobile-contact mobile-menu">
                             <h3 class="contact-btn m-text">Contact Us</h3>
                         </div></a>
-                        <div class="m-web-wrapper">
+                        <div class="m-web-wrapper mobile-menu">
                             <a href=""><div class="mobile-nav-btn mobile-nav-box m-web">
                             <i class="fas fa-code mobile-web-icon m-text"></i>
                             <h4 class="m-text">Web</h4>
@@ -219,7 +234,7 @@
                                 </ul>
                             </div></a>
                         </div>
-                        <div class="m-it-wrapper">
+                        <div class="m-it-wrapper mobile-menu">
                             <a href=""><div class="mobile-nav-btn mobile-nav-box m-it">
                             <i class="fas fa-desktop mobile-it-icon m-text"></i>
                             <h4 class="m-text">IT</h4>
@@ -236,7 +251,7 @@
                                 </ul>
                             </div></a>
                         </div>
-                        <div class="m-tele-wrapper">
+                        <div class="m-tele-wrapper mobile-menu">
                             <a href=""><div class="mobile-nav-btn mobile-nav-box m-tele">
                             <i class="fas fa-phone mobile-tele-icon m-text"></i>
                             <h4 class="m-text">Telecoms</h4>
@@ -253,7 +268,7 @@
                                 </ul>
                             </div></a>
                         </div>
-                        <div class="m-soft-wrapper">
+                        <div class="m-soft-wrapper mobile-menu">
                             <a href=""><div class="mobile-nav-btn mobile-nav-box m-soft">
                             <i class="fas fa-th mobile-soft-icon m-text"></i>
                             <h4 class="m-text">Bespoke</h4>
@@ -270,7 +285,7 @@
                                 </ul>
                             </div></a>
                         </div>
-                        <div class="m-mark-wrapper">
+                        <div class="m-mark-wrapper mobile-menu">
                             <a href=""><div class="mobile-nav-btn mobile-nav-box m-mark">
                             <i class="fas fa-chart-bar mobile-mark-icon m-text"></i>
                             <h4 class="m-text">Digital</h4>
@@ -287,7 +302,7 @@
                                 </ul>
                             </div></a>
                         </div>
-                        <div class="m-cyber-wrapper">
+                        <div class="m-cyber-wrapper mobile-menu">
                             <a href=""><div class="mobile-nav-btn mobile-nav-box m-cyber">
                             <i class="fas fa-shield-alt mobile-cyber-icon m-text"></i>
                             <h4 class="m-text">Cyber</h4>
@@ -366,7 +381,7 @@
                                 <h4 class="m-text">Insights</h3>
                             </div>
                         </div></a>
-                        <a href=""><div class="list-container">
+                        <a href=""><div class="list-container mobile-menu">
                             <div class="m-list-head">
                                 <h3 class="m-text">Support</h3>
                             </div>
@@ -744,23 +759,37 @@
             </div>
         </div>
 
+        
 
-    <!-- \\\\\\\ SCRIPTS /////// -->
+        <!-- \\\\\\\ SCRIPTS /////// -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+            $('.top-image').slick({
+                dots: true,
+                arrows: false,
+                autoplay: true,
+            });
+            });
+        </script>
+
+
+        <script type="text/javascript" id="cookieinfo" 
+                src="//cookieinfoscript.com/js/cookieinfo.min.js"
+                data-font-size="18px"
+                data-bg="rgb(144, 108, 180)"
+                data-fg="rgb(241, 241, 241)"
+                data-link="rgb(31, 34, 46)"
+                data-divlinkbg="rgb(241, 241, 241)"
+                data-divlink="rgb(144, 108, 180)"
+                data-font-family="font-family: 'poppins', sans-serif">
+        </script>
     
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/slick/slick.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-        $('.top-image').slick({
-            dots: true,
-            arrows: false,
-            autoplay: true,
-        });
-        });
-    </script>
-
     </body>
 </html>
