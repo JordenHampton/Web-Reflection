@@ -43,9 +43,17 @@ header {
     height: 3.7rem;
 }
 
+@supports (-ms-flow-from) { /* Edge only */
+
+    .headset,
+    .plane {
+        justify-content: space-around;
+    }
+}
+
 .headset i,
 .plane i {
-    margin-top: 1rem;
+    margin-top: 14%;
 }
 
 .headset {

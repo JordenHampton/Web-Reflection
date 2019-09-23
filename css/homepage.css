@@ -68,9 +68,18 @@ header {
   height: 3.7rem;
 }
 
+@supports (-ms-flow-from: true) {
+  /* Edge only */
+  .headset,
+  .plane {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .headset i,
 .plane i {
-  margin-top: 1rem;
+  margin-top: 14%;
 }
 
 .headset {
@@ -316,8 +325,8 @@ header {
   width: 100%;
   height: 53.5rem;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/1.jpg") no-repeat center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/1.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../img/carousel/1.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../img/carousel/1.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
           box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
@@ -352,8 +361,8 @@ header {
   width: 100%;
   height: 53.5rem;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/2.jpg") no-repeat center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/2.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../img/carousel/2.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../img/carousel/2.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
           box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
@@ -388,8 +397,8 @@ header {
   width: 100%;
   height: 53.5rem;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/3.jpg") no-repeat center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/3.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../img/carousel/3.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../img/carousel/3.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
           box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
@@ -424,8 +433,8 @@ header {
   width: 100%;
   height: 53.5rem;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/4.jpg") no-repeat center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/4.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../img/carousel/4.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../img/carousel/4.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
           box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
@@ -460,8 +469,8 @@ header {
   width: 100%;
   height: 53.5rem;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/5.jpg") no-repeat center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/5.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../img/carousel/5.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../img/carousel/5.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
           box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
@@ -496,8 +505,8 @@ header {
   width: 100%;
   height: 53.5rem;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../../img/carousel/6.jpg") no-repeat center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../../img/carousel/6.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.91)), color-stop(30%), to(transparent)), url("../img/carousel/6.jpg") no-repeat center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.91), 30%, transparent), url("../img/carousel/6.jpg") no-repeat center;
   background-size: cover;
   -webkit-box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
           box-shadow: inset 400px 0 1500px rgba(0, 0, 0, 0.71);
