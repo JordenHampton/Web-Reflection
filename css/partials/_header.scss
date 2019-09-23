@@ -43,7 +43,7 @@ header {
     height: 3.7rem;
 }
 
-@supports (-ms-flow-from) { /* Edge only */
+@supports (-ms-flow-from: true) { /* Edge only */
 
     .headset,
     .plane {
