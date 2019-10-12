@@ -16,6 +16,10 @@
         display: none;
     }
 
+    .head-right {
+        margin-right: 3vw;
+    }
+
     .services {
         @include box;
     }

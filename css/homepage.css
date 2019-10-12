@@ -34,7 +34,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 3vw;
+  margin-right: 1.5vw;
 }
 
 .head-logo {
@@ -99,7 +99,7 @@ header {
 }
 
 .phone {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   margin: .7rem .7rem 0 .5rem;
@@ -1610,6 +1610,9 @@ header {
   }
   .head-right .fa-phone {
     display: none;
+  }
+  .head-right {
+    margin-right: 3vw;
   }
   .services {
     max-width: 1000px;

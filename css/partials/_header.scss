@@ -21,7 +21,7 @@ header {
 
 .head-right {
     display: flex;
-    margin-right: 3vw;
+    margin-right: 1.5vw;
 }
 
 .head-logo {
@@ -74,7 +74,7 @@ header {
 
 
 .phone {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     transform: scaleX(-1);
     margin: .7rem .7rem 0 .5rem;
     color: $c-header; 
