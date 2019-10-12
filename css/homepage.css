@@ -1121,8 +1121,13 @@ header {
   padding-bottom: 2.8rem;
 }
 
+.author p {
+  font-size: .76rem;
+}
+
 .author h2 {
   color: #313541;
+  font-size: .76rem;
 }
 
 .footer {
